@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(122, 122, 122);
+        }
+        
+        body {
+            background-color: dimgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#bola {
+            background-color: white;
+            border-radius: 50%;
+            height: 100px;
+            margin: 10px;
+            width: 100px;
+        }
+
+        header {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 4px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        main {
+            background-color: white;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.208);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #4d4c4c;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.205);
+            padding: 3px;
+        }
+        
+        nav > a {
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, fuga, natus vel fugiat reprehenderit quos repellat soluta laboriosam ratione aperiam amet corporis minus? Soluta voluptatem voluptatibus consequatur pariatur, placeat ipsum?</p>
+                <aside>
+                    <p>artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article></article>
+        </section>
+    </main>
+    <footer>
+        <p>2023 Leon &copy;</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>
