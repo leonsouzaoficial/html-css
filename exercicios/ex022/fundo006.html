@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover;
+            
             height: 100vh;
+
+            /* Shorthand background 
+                color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
             border: 1px solid darkblue;
             border-radius: 10px;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
         }
