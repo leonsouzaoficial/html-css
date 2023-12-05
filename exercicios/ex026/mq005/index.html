@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="css/style.css" media="">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" onclick="cliqueMenu()" class="material-symbols-outlined">menu</span>
+        <menu id="menu_principal">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Roms</a></li>
+                <li><a href="#">Emuladores</a></li>
+                <li><a href="#">Tutoriais</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, neque exercitationem nisi voluptatibus, velit ex placeat blanditiis modi doloribus ullam a officia, sint reiciendis dolores dolorem adipisci atque magni sequi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi quas, esse doloremque quia rerum amet tenetur excepturi aspernatur adipisci totam dolorum pariatur necessitatibus quod? Modi nihil rem quos expedita.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem dolore dolorem aut ducimus, ipsam ipsa labore nihil eos repellendus pariatur est voluptas odio ab sed accusantium doloremque impedit culpa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus in architecto cum molestias maxime optio. Culpa perferendis molestias similique enim. Libero, veritatis enim voluptas cum accusantium inventore odio vero provident?</p>
+        </article>
+    </main>
+    <script>
+        function cliqueMenu () {
+            if (menu_principal.style.display == "block") {
+                menu_principal.style.display = "none"
+            }
+
+            else {
+                menu_principal.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
